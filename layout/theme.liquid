@@ -296,5 +296,19 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <style>
+      .home{
+          width: 100vw;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #DFBDC6;
+      }
+      header{
+          display: none!important;
+      }
+  
+  </style>
   </body>
 </html>
