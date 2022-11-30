@@ -251,6 +251,11 @@
       {{ content_for_layout }}
     </main>
 
+    {%- if template == 'index' -%}
+      {% render 'home' %}
+    {%- endif -%}
+
+
     {% section 'footer' %}
 
     <ul hidden>
